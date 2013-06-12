@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gps" >
+
+    <EditText
+        android:id="@+id/edit_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/edit_name"
+        android:layout_below="@+id/edit_name"
+        android:ems="10"
+        android:hint="@string/edit_longitude" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/edit_longitude"
+        android:layout_below="@+id/edit_longitude"
+        android:ems="10"
+        android:hint="@string/edit_latitude" />
+
+    <Button
+        android:id="@+id/button_set"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:onClick="setApp"
+        android:layout_alignRight="@+id/edit_latitude"
+        android:layout_below="@+id/edit_latitude"
+        android:text="@string/button_set" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/edit_name" />
+
+</RelativeLayout>

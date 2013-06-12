@@ -1,0 +1,36 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" >
+	<TableRow>
+		<EditText
+			android:id="@+id/ChatName"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:hint="Name"/>
+	</TableRow>
+	
+	<TableRow> 
+		<EditText
+			android:id="@+id/ChatLatitude"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:hint="Latitude"/>
+	</TableRow> 
+	
+	<TableRow> 
+		<EditText
+			android:id="@+id/ChatLongitude"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:hint="Longitude"/>
+		</TableRow> 
+	
+	<TableRow>
+		<Button
+		    android:layout_gravity="center"
+			android:id="@+id/ChatButtonSend"
+			android:text="Next" /> 
+	</TableRow>
+</TableLayout>

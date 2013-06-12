@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateChatroom" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create a new chatroom" />
+
+    <TextView
+        android:id="@+id/warnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp" />
+
+    <EditText
+        android:id="@+id/chatroom_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/warnText"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="Enter name here"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chatroom_name"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="154dp"
+        android:onClick="onClick"
+        android:text="Create" />
+
+</RelativeLayout>

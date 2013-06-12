@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello from a Bookstore with a Database</string>
+    <string name="app_name">Book Store with Database</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_checkout">Checkout</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_buy">Buy</string>
+    <string name="menu_order">Order</string>
+    <string name="menu_cancel">Cancel</string>
+</resources>

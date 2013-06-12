@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateChatroom" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Join a chatroom" />
+
+    <EditText
+        android:id="@+id/chatroom_addIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="42dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Enter IP here"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/warnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatroom_addname"
+        android:layout_marginTop="58dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/chatroom_addname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chatroom_addport"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chatroom_addport"
+        android:layout_marginTop="17dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Enter name here"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/chatroom_addport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chatroom_addIP"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chatroom_addIP"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="Enter port here"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/warnText"
+        android:layout_alignLeft="@+id/chatroom_addname"
+        android:layout_marginBottom="17dp"
+        android:onClick="onClick"
+        android:text="Join" />
+
+</RelativeLayout>
